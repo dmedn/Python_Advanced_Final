@@ -7,6 +7,8 @@ services:
     stop_signal: SIGTERM
     ports:
       - "8000:8000"
+    networks:
+      - twitter_network
 
   nginx_web:
     container_name: nginx_web
